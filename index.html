@@ -33,6 +33,26 @@
     line-height: 25px;
     border-radius: 4px;
   }
+	
+.notification-container {
+    position: fixed;
+    top: 15px;
+    right: 15px;
+    width: 500px;
+    max-width: calc(100% - 30px);
+}
+
+.notification {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    color: #fff;
+    font-size: 16px;
+    padding: 15px 20px;
+    line-height: 20px;
+    margin-bottom: 15px;
+    animation: grow 0.5s ease-in forwards;
+}  
   
   .header a.logo {
     font-size: 25px;
@@ -84,11 +104,11 @@
     </div> 
 
 <head>
-<div class="alert">
+ <div class="notification notification-warning">
   <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
   <strong>Warning!</strong> This Website Will No Longer Be Updated!, Bugs With The Website Will Still Be Fixed, We Hope You Understand.
 </div>
-<div class="alert">
+ <div class="notification notification-warning">
   <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
   <strong>Warning!</strong>This Website Is Outdated And Is No Longer Updated, The New Website Link Will Be In The Navigation .
 </div>	
